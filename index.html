@@ -55,7 +55,7 @@
             </div>                                    
             <nav class="navbar">
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
+                    <li><a class="active dropbtn" href="./index.html">Home</a></li>
                     <li><a href="./aboutus.html">About Us</a></li>
                     <li><a href="./upcominggames.html">Upcoming Games</a></li>
                     <li class="dropdown">
@@ -66,7 +66,7 @@
                         </div>
                     </li>
                     <li class="dropdown">
-                        <a class="active dropbtn" href="javascript:void(0)">Parts Selection</a>
+                        <a href="javascript:void(0)">Parts Selection</a>
                         <div class="dropdown-content">
                             <a href="./partsselection.html">Processors</a>
                             <a href="./partsselection.html">Graphic Cards</a>
@@ -604,7 +604,7 @@
     </div>
 </footer>
 <script>
-    function toggleMobileMenu(menuToggle = null) {
+function toggleMobileMenu(menuToggle = null) {
     const navList = document.querySelector('.navbar ul');
     navList.classList.toggle('active');
 
