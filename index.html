@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>GenX - Gaming Store</title>
+    <link rel="shortcut icon" href="images/GenX_Logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mogra&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/bxl-facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="images/bxl-twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://www.discord.com" target="_blank">
+                <img src="images/bxl-discord-alt.svg" alt="Discord">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/bxl-instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://www.whatsapp.com" target="_blank">
+                <img src="images/bxl-whatsapp.svg" alt="Whatsapp">
+            </a>
+        </div>
+        <div class="logo-container">
+            <img src="images/GenX_Logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="header-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for games...">
+                <button type="submit" class="search-btn">
+                    <img src="images/bx-search.svg" alt="Search" class="button-icon">
+                </button>
+                <div class="login-icon-container">
+                    <a href="login.html">
+                        <img src="images/login.svg" alt="Login" class="login-icon">
+                    </a>
+                </div>
+                <div class="header-icons">
+                    <a href="order.html" id="cart-icon">
+                        <img src="images/bx-cart.svg" alt="Cart" class="header-icon-img"> <span id="cart-count">0</span>
+                    </a>
+                    <a href="favorites.html" id="favorite-icon">
+                        <img src="images/bx-heart.svg" alt="Favorites" class="header-icon-img"> <span id="fav-count">0</span>
+                    </a>
+                </div>
+            </div>                                    
+            <nav class="navbar">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./upcominggames.html">Upcoming Games</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">C&G Peripherals</a>
+                        <div class="dropdown-content">
+                            <a href="./c&gperipherals.html">Console</a>
+                            <a href="./c&gperipherals.html">Peripherals</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="active dropbtn" href="javascript:void(0)">Parts Selection</a>
+                        <div class="dropdown-content">
+                            <a href="./partsselection.html">Processors</a>
+                            <a href="./partsselection.html">Graphic Cards</a>
+                            <a href="./partsselection.html">Motherboards</a>
+                            <a href="./partsselection.html">RAMS</a>
+                            <a href="./partsselection.html">Storages</a>
+                        </div>
+                    </li>
+                    <li><a href="./games.html">Games</a></li>
+                    <li><a href="./q&f.html">Q&F</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-toggle" onclick="toggleMobileMenu(this)">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+  
+    </header>
+
+    <main>
+        <div class="logos-container">
+            <img src="images/brandlogo3.png" alt="Epic Games Logo">
+            <img src="images/brandlogo2.png" alt="MSI Logo">
+            <img src="images/brandlogo5.png" alt="Nintendo Logo">
+            <img src="images/brandlogo1.png" alt="NVIDIA Logo">
+            <img src="images/brandlogo6.png" alt="PlayStation Logo">
+            <img src="images/brandlogo7.png" alt="PlayStation Logo">
+            <img src="images/brandlogo4.png" alt="PlayStation Logo">
+        </div>
+        <section class="introduction">
+            <div class="introduction-content">
+                <h1>Welcome to GenX!</h1>
+                <p>
+                    Step into the ultimate gaming universe with <span>GenX</span>. From cutting-edge consoles 
+                    to blockbuster titles, we’re here to fuel your passion for gaming. 
+                </p>
+                <p>
+                    Whether you're chasing the thrill of competitive play or relaxing with immersive adventures, 
+                    GenX has everything you need to level up your gaming experience.
+                </p>
+                <a href="games.html" class="cta-button">Explore Now</a>
+            </div>
+        </section>
+        <section class="games-list">
+            <h2>HOT OFFERS</h2>
+            <h5>Unbeatable discounts and exclusive deals on top games, consoles, and accessories. Grab these limited-time offers before they’re gone!</h5>
+            <section class="deals-container">
+                <div class="flash-deal">
+                    <h3 class="section-title">Flash Deal</h3>
+                    <p class="deal-dates animate">Offer valid: <span>15th to 21st January</span></p>
+                    <ul class="offer-highlights">
+                        <li>Limited-time flash deals on top-rated games</li>
+                        <li>Exclusive discounts up to 50% off</li>
+                        <li>Free shipping on select items</li>
+                    </ul>
+                    <div class="deal-card fade-in">
+                        <div class="image-container">
+                            <a href="#">
+                                <img src="images/games9.jpg" alt="Destiny 2: Legacy Collection" class="deal-image">
+                            </a>
+                            <div class="hover-description">
+                                <p><strong>Description:</strong> Embark on a cinematic story in an action-packed and thriving universe.</p>
+                                <p><strong>Release Date:</strong> May 25th 2024</p>
+                                <p><strong>Platform:</strong> PC</p>
+                                <p><strong>Genres:</strong> Action, Adventure</p>
+                                <p><strong>Price:</strong> LKR10,200</p>
+                            </div>
+                        </div>
+                        <h4 class="product-name">Destiny 2: Legacy Collection</h4>
+                        <p class="stock">Left: 49 | Sold: 41</p>
+                        <p class="price">
+                            <span class="final-price">LKR10,200</span>
+                            <span class="discount">(40% OFF)</span>
+                            <span class="original-price">LKR17,000</span>
+                        </p>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="trending-offers">
+                    <h3 class="section-title">More Currently Trending Offers</h3>
+                    <p class="caption">Don’t miss out – grab them while you still have the chance!</p>
+                    <ol class="trending-types">
+                        <li>Action-packed adventures</li>
+                        <li>Challenging RPG games</li>
+                        <li>Sports and simulation games</li>
+                    </ol>
+                    <div class="offers-grid">
+                        <div class="offer-card fade-in">
+                            <div class="image-container">
+                                <a href="#">
+                                    <img src="images/games3.jpg" alt="The Forever Winter">
+                                </a>
+                                <div class="hover-description">
+                                    <p><strong>Description:</strong>  The battlefield is unpredictable thanks to The Forever Winter’s Dynamic Encounter system: enemies have their own goals and agendas.</p>
+                                    <p><strong>Release Date:</strong> February 28th 2024</p>
+                                    <p><strong>Platform:</strong> PC</p>
+                                    <p><strong>Genres:</strong> Action</p>
+                                    <p><strong>Price:</strong> LKR4,800</p>
+                                </div>
+                            </div>
+                            <h4 class="product-name">The Forever Winter</h4>
+                            <p class="stock">Left: 12 | Sold: 6</p>
+                            <p class="price">
+                                <span class="final-price">LKR4,800</span>
+                                <span class="discount">(20% OFF)</span>
+                                <span class="original-price">LKR6,000</span>
+                            </p>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                        <div class="offer-card fade-in">
+                            <div class="image-container">
+                                <a href="#">
+                                    <img src="images/games8.jpg" alt="Zombie Army 4: Dead War">
+                                </a>
+                                <div class="hover-description">
+                                    <p><strong>Description:</strong> Hitler’s hordes are back for more in this spine-chilling shooter from the makers of Sniper Elite 4! </p>
+                                    <p><strong>Release Date:</strong> April 15th 2022</p>
+                                    <p><strong>Platform:</strong> PC</p>
+                                    <p><strong>Genres:</strong> Action</p>
+                                    <p><strong>Price:</strong> LKR4,704</p>
+                                </div>
+                            </div>
+                            <h4 class="product-name">Zombie Army 4: Dead War</h4>
+                            <p class="stock">Left: 8 | Sold: 10</p>
+                            <p class="price">
+                                <span class="final-price">LKR4,704</span>
+                                <span class="discount">(16% OFF)</span>
+                                <span class="original-price">LKR4,704</span>
+                            </p>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section> 
+        <div>
+            <div class="btn-container">
+                <a href="games.html" class="more-btn">For More</a>
+            </div>
+        </div>      
+        <section class="games-list">
+            <h2>Latest-Release-Games</h2>
+            <h5>Stay ahead of the curve with the newest game titles. Explore trending releases and dive into the latest adventures today!</h5>
+            <ul class="game-highlights">
+                <li>Explore vast open-world RPGs</li>
+                <li>Exciting multiplayer modes</li>
+                <li>Enhanced graphics for next-gen consoles</li>
+            </ul>
+            <div class="store-items">
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="game1-details.html">
+                            <img src="images/games1.jpg" alt="Hogwarts Legacy">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> ThHogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books.</p>
+                            <p><strong>Releasing Date:</strong> January 15th 2024</p>
+                            <p><strong>Platform:</strong> PC | Steam Deck Verified</p>
+                        <p><strong>Genres:</strong> Action, Adventure, RPG</p>
+                            <p><strong>Price:</strong> LKR4,200</p>
+                        </div>
+                    </div>
+                    <h3>Hogwarts Legacy</h3>
+                    <div class="details">
+                        <p><strong>Releasing Date:</strong> January 15th 2025</p>
+                        <p><strong>Platform:</strong> PC | Steam Deck Verified</p>
+                        <p><strong>Genres:</strong> Action, Adventure, RPG</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="discount">-79%</span>
+                        <span class="original-price">LKR20,000</span>
+                        <span class="final-price">LKR4,200</span>
+                    </div>
+                    <div class="actions">
+                        <button>Add to Cart</button>
+                        <button class="wishlist-btn">♥</button>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="game1-details.html">
+                            <img src="images/games2.jpg" alt="Romancing SaGa 2: Revenge of the Seven">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> Romancing SaGa 2: Revenge of the Seven is a full remake of the groundbreaking non-linear RPG Romancing SaGa 2.</p>
+                            <p><strong>Release Date:</strong> February 22nd 2024</p>
+                            <p><strong>Platform:</strong> PC</p>
+                            <p><strong>Genres:</strong> RPG</p>
+                            <p><strong>Price:</strong> LKR11,250</p>
+                        </div>
+                    </div>
+                    <h3>Romancing SaGa 2</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> February 22nd 2025</p>
+                        <p><strong>Platform:</strong> PC</p>
+                        <p><strong>Genres:</strong> RPG</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="discount">-25%</span>
+                        <span class="original-price">LKR15,000</span>
+                        <span class="final-price">LKR11,250</span>
+                    </div>
+                    <div class="actions">
+                        <button>Add to Cart</button>
+                        <button class="wishlist-btn">♥</button>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="game1-details.html">
+                            <img src="images/games3.jpg" alt="The Forever Winter">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong>  The battlefield is unpredictable thanks to The Forever Winter’s Dynamic Encounter system: enemies have their own goals and agendas.</p>
+                            <p><strong>Release Date:</strong> February 28th 2024</p>
+                            <p><strong>Platform:</strong> PC</p>
+                            <p><strong>Genres:</strong> Action</p>
+                            <p><strong>Price:</strong> LKR4,800</p>
+                        </div>
+                    </div>
+                    <h3>The Forever Winter</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> February 28th 2024</p>
+                        <p><strong>Platform:</strong> PC</p>
+                        <p><strong>Genres:</strong> Action</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="discount">-20%</span>
+                        <span class="original-price">LKR6,000</span>
+                        <span class="final-price">LKR4,800</span>
+                    </div>
+                    <div class="actions">
+                        <button>Add to Cart</button>
+                        <button class="wishlist-btn">♥</button>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="game1-details.html">
+                            <img src="images/games4.jpg" alt="NBA 2K25">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> Command every court with authenticity and realism Powered by ProPLAY™, giving you ultimate control over how you play in NBA 2K25.</p>
+                            <p><strong>Release Date:</strong> March 14th 2024</p>
+                            <p><strong>Platform:</strong> PC, PS5</p>
+                            <p><strong>Genres:</strong> Sports, simulation</p>
+                            <p><strong>Price:</strong> LKR9,000</p>
+                        </div>
+                    </div>
+                    <h3>NBA 2K25</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> March 14th 2024</p>
+                        <p><strong>Platform:</strong> PC, PS5</p>
+                        <p><strong>Genres:</strong> Sports, simulation</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="discount">-50%</span>
+                        <span class="original-price">LKR18,000</span>
+                        <span class="final-price">LKR9,000</span>
+                    </div>
+                    <div class="actions">
+                        <button>Add to Cart</button>
+                        <button class="wishlist-btn">♥</button>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="game1-details.html">
+                            <img src="images/games5.jpg" alt="S.T.A.L.K.E.R. 2: Heart of Chornobyl">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> Chornobyl Exclusion Zone has changed dramatically after the second massive explosion in year 2006.</p>
+                            <p><strong>Release Date:</strong> March 14th 2024</p>
+                            <p><strong>Platform:</strong> PC</p>
+                            <p><strong>Genres:</strong> Action, Shooter, Adventure</p>
+                            <p><strong>Price:</strong> LKR10,500</p>
+                        </div>
+                    </div>
+                    <h3>S.T.A.L.K.E.R. 2</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> March 14th 2025</p>
+                        <p><strong>Platform:</strong> PC</p>
+                        <p><strong>Genres:</strong> Action, Shooter, Adventure</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="discount">-30%</span>
+                        <span class="original-price">LKR15,000</span>
+                        <span class="final-price">LKR10,500</span>
+                    </div>
+                    <div class="actions">
+                        <button>Add to Cart</button>
+                        <button class="wishlist-btn">♥</button>
+                    </div>
+                </div>
+            </div>
+        </SECtion>
+        <div>
+            <div class="button-container">
+                <a href="games.html" class="more-button">For More</a>
+            </div>
+        </div>
+        <section class="games-list">
+            <h2>Upcoming Games</h2>
+            <h5>Get ready for the most anticipated games of the year. Previews, release dates, and exclusive insights—don’t miss out on what’s coming next!</h5>
+            <ol class="upcoming-games-list">
+                <li>Starfield - Launching March 2025</li>
+                <li>The Elder Scrolls VI - Launching July 2025</li>
+                <li>Cyberpunk 2077: Phantom Liberty II - Launching September 2025</li>
+                <li>Fable Reboot - Launching December 2025</li>
+                <li>Dragon Age: Dreadwolf - Launching January 2026</li>
+            </ol>
+            <div class="store-items">
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="game1-details.html">
+                            <img src="images/upcoming1.jpg" alt="Monster Hunter Wilds">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> This is a story of monsters and humans and their struggles to live in harmony in a world of duality.</p>
+                            <p><strong>Releasing Date:</strong> January 15th 2025</p>
+                            <p><strong>Platform:</strong> PC</p>
+                            <p><strong>Genres:</strong> Action</p>
+                            <p><strong>Price:</strong> LKR16,000</p>
+                        </div>
+                    </div>
+                    <h3>Monster Hunter Wilds</h3>
+                    <div class="details">
+                        <p><strong>Releasing Date:</strong> January 15th 2025</p>
+                        <p><strong>Platform:</strong> PC</p>
+                        <p><strong>Genres:</strong> Action</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="discount">-20%</span>
+                        <span class="original-price">LKR20,000</span>
+                        <span class="final-price">LKR16,000</span>
+                    </div>
+                    <div class="actions">
+                        <button>Add to Cart</button>
+                        <button class="wishlist-btn">♥</button>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="game1-details.html">
+                            <img src="images/upcoming2.jpg" alt="Assassin's Creed® Shadows">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> While investigating the disappearance of twin girls at Winterlake - something terrible happens to Caroline Walker.</p>
+                            <p><strong>Releasing Date:</strong> February 22nd 2025</p>
+                            <p><strong>Platform:</strong> PC</p>
+                            <p><strong>Genres:</strong> Action, Adventure</p>
+                            <p><strong>Price:</strong> LKR240</p>
+                        </div>
+                    </div>
+                    <h3>Assassin's Creed® Shadows</h3>
+                    <div class="details">
+                        <p><strong>Releasing Date:</strong> February 22nd 2025</p>
+                        <p><strong>Platform:</strong> PC</p>
+                        <p><strong>Genres:</strong> Action, Adventure</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="discount">-90%</span>
+                        <span class="original-price">LKR2,400</span>
+                        <span class="final-price">LKR240</span>
+                    </div>
+                    <div class="actions">
+                        <button>Add to Cart</button>
+                        <button class="wishlist-btn">♥</button>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="game1-details.html">
+                            <img src="images/upcoming3.jpg" alt="DOOM: The Dark Ages">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong>  The Dark Ages is the single-player, action FPS prequel to the critically acclaimed DOOM (2016) and DOOM Eternal.</p>
+                            <p><strong>Releasing Date:</strong> February 28th 2025</p>
+                            <p><strong>Platform:</strong> PC</p>
+                            <p><strong>Genres:</strong> Action</p>
+                            <p><strong>Price:</strong> LKR14,400</p>
+                        </div>
+                    </div>
+                    <h3>DOOM: The Dark Ages</h3>
+                    <div class="details">
+                        <p><strong>Releasing Date:</strong> February 28th 2025</p>
+                        <p><strong>Platform:</strong> PC</p>
+                        <p><strong>Genres:</strong> Action</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR$14,400</span>
+                    </div>
+                    <div class="actions">
+                        <button>Add to Cart</button>
+                        <button class="wishlist-btn">♥</button>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="game1-details.html">
+                            <img src="images/upcoming5.jpg" alt="Alan Wake 2">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> A string of ritualistic murders threatens Bright Falls, a small-town community surrounded by Pacific Northwest wilderness.</p>
+                            <p><strong>Releasing Date:</strong> March 14th 2025</p>
+                            <p><strong>Platform:</strong> PC</p>
+                            <p><strong>Genres:</strong> Action, Shooter, Adventure</p>
+                            <p><strong>Price:</strong> LKR7,500</p>
+                        </div>
+                    </div>
+                    <h3>Alan Wake 2</h3>
+                    <div class="details">
+                        <p><strong>Releasing Date:</strong> March 14th 2025</p>
+                        <p><strong>Platform:</strong> PC</p>
+                        <p><strong>Genres:</strong> Action, Shooter, Adventure</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="discount">-50%</span>
+                        <span class="original-price">LKR15,000</span>
+                        <span class="final-price">LKR7,500</span>
+                    </div>
+                    <div class="actions">
+                        <button>Add to Cart</button>
+                        <button class="wishlist-btn">♥</button>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="game1-details.html">
+                            <img src="images/upcoming6.jpg" alt="Marvel's Guardians">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> Fire up a wild ride across the cosmos with a fresh take on Marvel’s Guardians of the Galaxy.</p>
+                            <p><strong>Releasing Date:</strong> April 12th 2025</p>
+                            <p><strong>Platform:</strong> PC | Steam Deck Verified</p>
+                            <p><strong>Genres:</strong> Action, Adventure</p>
+                            <p><strong>Price:</strong> LKR2,800</p>
+                        </div>
+                    </div>
+                    <h3>Marvel's Guardians</h3>
+                    <div class="details">
+                        <p><strong>Releasing Date:</strong> April 12th 2025</p>
+                        <p><strong>Platform:</strong> PC | Steam Deck Verified</p>
+                        <p><strong>Genres:</strong> Action, Adventure</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="discount">-86%</span>
+                        <span class="original-price">LKR20,000</span>
+                        <span class="final-price">LKR2,800</span>
+                    </div>
+                    <div class="actions">
+                        <button>Add to Cart</button>
+                        <button class="wishlist-btn">♥</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <div>
+                <div class="button-container">
+                    <a href="upcominggames.html" class="more-button">For More</a>
+                </div>
+            </div>
+    </main>
+
+         <!-- Footer Section  -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Latest Releases</h3>
+            <ul>
+                <li>Action Games</li>
+                <li>RPG Titles</li>
+                <li>Sports Games</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Popular Platforms</h3>
+            <ol>
+                <li>PC Gaming</li>
+                <li>PlayStation</li>
+                <li>Xbox</li>
+            </ol>
+        </div>
+        <div class="footer-column">
+            <h3>Upcoming Games</h3>
+            <ol>
+                <li>Hell Is Us</li>
+                <li>Ghost of Yōtei</li>
+                <li>Civilization VII</li>
+                <li>Football Manager</li>
+            </ol>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <div>
+                <p>support@genxgaming.com</p>
+                <p>+94-722-071-234 (Sales)</p>
+                <p>+94-777-841-593 (Technical)</p>
+                <p>+94-777-349-567(Management)</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com"><img src="images/bxl-facebook.svg" alt="Facebook"></a>
+                <a href="https://www.twitter.com"><img src="images/bxl-twitter.svg" alt="Twitter"></a>
+                <a href="https://www.discord.com"><img src="images/bxl-discord-alt.svg" alt="Discord"></a>
+                <a href="https://www.instagram.com"><img src="images/bxl-instagram.svg" alt="Instagram"></a>
+                <a href="https://www.whatsapp.com"><img src="images/bxl-whatsapp.svg" alt="Whatsapp"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-payment">
+        <h3>Ways to Pay:</h3>
+        <div class="payment-methods">
+            <img src="images/Paysafe.png" alt="Paysafe">
+            <img src="images/MasterCard.webp" alt="MasterCard">
+            <img src="images/Visa.jpg" alt="Visa">
+            <img src="images/American-Express.webp" alt="American Express">
+            <img src="images/AliPay.jpg" alt="AliPay">
+            <img src="images/WeChat-Pay.png" alt="WeChat Pay">
+            <img src="images/CB.png" alt="CB">
+            <img src="images/Discover.jpg" alt="Discover">
+            <img src="images/Google-Pay.png" alt="Google Pay">
+            <img src="images/PagSeguro.png" alt="PagSeguro">
+            <img src="images/PayPal.png" alt="PayPal">
+            <img src="images/Apple-Pay.jpg" alt="Apple Pay">
+            <img src="images/JCB.jpg" alt="JCB">
+            <img src="images/Maestro.jpg" alt="Maestro">
+            <img src="images/Klarna.webp" alt="Klarna">
+            <img src="images/Visa-Debit.jpeg" alt="Visa Debit">
+            <img src="images/UnionPay.png" alt="UnionPay">
+            <img src="images/Yellow-Pay.png" alt="Yellow Pay">
+        </div>
+    </div>
+</footer>
+<script>
+    function toggleMobileMenu(menuToggle = null) {
+    const navList = document.querySelector('.navbar ul');
+    navList.classList.toggle('active');
+
+    if (menuToggle) {
+        menuToggle.classList.toggle('active');
+    }
+
+    // Get all navigation items
+    const navItems = document.querySelectorAll('.navbar ul li a');
+    navItems.forEach(item => {
+        item.onclick = (e) => {
+            const href = item.getAttribute("href");
+
+            // Prevent closing when clicking on the 'Parts Selection' dropdown
+            if (item.closest('li').classList.contains('dropdown') && href === "javascript:void(0)") {
+                // Do nothing, so the menu remains open
+                e.preventDefault(); // Prevent default behavior
+                return;
+            }
+
+            // If it's a hash link (like #graphic-section), delay closing the menu for smooth scroll
+            if (href.startsWith("#")) {
+                // Delay closing the menu so that the page scrolls smoothly first
+                setTimeout(() => {
+                    navList.classList.remove('active');
+                    if (menuToggle) {
+                        menuToggle.classList.remove('active');
+                    }
+                }, 300); // Adjust delay if needed
+            } else {
+                // For regular links, close the menu immediately
+                navList.classList.remove('active');
+                if (menuToggle) {
+                    menuToggle.classList.remove('active');
+                }
+            }
+        };
+    });
+}
+</script>
+</body>
+</html>
