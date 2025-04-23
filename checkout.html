@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="shortcut icon" href="images/GenX_Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/bxl-facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="images/bxl-twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://www.discord.com" target="_blank">
+                <img src="images/bxl-discord-alt.svg" alt="Discord">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/bxl-instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://www.whatsapp.com" target="_blank">
+                <img src="images/bxl-whatsapp.svg" alt="Whatsapp">
+            </a>
+        </div>
+        <div class="logo-container">
+            <img src="images/GenX_Logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="header-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for games...">
+                <button type="submit" class="search-btn">
+                    <img src="images/bx-search.svg" alt="Search" class="button-icon">
+                </button>
+                <div class="login-icon-container">
+                    <a href="login.html">
+                        <img src="images/login.svg" alt="Login" class="login-icon">
+                    </a>
+                </div>
+                <div class="header-icons">
+                    <a href="order.html" id="cart-icon">
+                        <img src="images/bx-cart.svg" alt="Cart" class="header-icon-img"> <span id="cart-count">0</span>
+                    </a>
+                    <a href="favorites.html" id="favorite-icon">
+                        <img src="images/bx-heart.svg" alt="Favorites" class="header-icon-img"> <span id="fav-count">0</span>
+                    </a>
+                </div>
+            </div>                                    
+            <nav class="navbar">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./upcominggames.html">Upcoming Games</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">C&G Peripherals</a>
+                        <div class="dropdown-content">
+                            <a href="./c&gperipherals.html">Console</a>
+                            <a href="./c&gperipherals.html">Peripherals</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Parts Selection</a>
+                        <div class="dropdown-content">
+                            <a href="./partsselection.html">Processors</a>
+                            <a href="./partsselection.html">Graphic Cards</a>
+                            <a href="./partsselection.html">Motherboards</a>
+                            <a href="./partsselection.html">RAMS</a>
+                            <a href="./partsselection.html">Storages</a>
+                        </div>
+                    </li>
+                    <li><a href="./games.html">Games</a></li>
+                    <li><a href="./q&f.html">Q&F</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-toggle" onclick="toggleMobileMenu(this)">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+        <main>
+            <h1 id="checkout-heading">Checkout</h1>
+
+            <h1 id="order-confirmation-heading">Thanks for Shopping with Us!</h1>
+            <section class="order-summary">
+                <h2>Order Summary</h2>
+                <table id="order-summary-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Unit Price</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Items will be inserted dynamically here -->
+                    </tbody>
+                </table>
+                <p id="subtotal">Subtotal: LKR <span>0.00</span></p>
+                <p id="shipping">Shipping Fee: LKR <span>0.00</span></p>
+                <p id="grand-total"><strong>Grand Total: LKR <span>0.00</span></strong></p>
+            </section>
+            
+            <section id="checkout-container">
+                <div class="container">
+                    <form id="checkout-form">
+                        <h2>Personal Details</h2>
+                        <label class="labal-la" for="name">Full Name:</label>
+                        <input class="input-in" type="text" id="name" name="name" required>
+                        
+                        <label class="labal-la" for="email">Email:</label>
+                        <input class="input-in" type="email" id="email" required>
+                        
+                        <label class="labal-la" for="phone1">Phone Number:</label>
+                        <input class="input-in" type="tel" id="phone1" required>
+                        
+                        <label class="labal-la" for="phone2">Alternative Phone Number (Optional):</label>
+                        <input class="input-in" type="tel" id="phone2">
+                        
+                        <h2>Delivery Details</h2>
+                        <label class="labal-la" for="address">Address:</label>
+                        <input class="input-in" type="text" id="address" required>
+                        
+                        <label class="labal-la" for="city">City:</label>
+                        <input class="input-in" type="text" id="city" required>
+                        
+                        <label class="labal-la" for="postal">Postal Code:</label>
+                        <input class="input-in" type="text" id="postal" required>
+                        
+                        <label class="labal-la" for="delivery-price">Delivery Price:</label>
+                        <input class="input-in" type="text" id="delivery-price" value="LKR400.00" readonly>
+                        
+                        <div class="coupon-container">
+                            <label class="labal-la" for="coupon">Coupon Code:</label>
+                            <div class="coupon-input">
+                                <input class="input-in" type="text" id="coupon">
+                                <button type="button" id="apply-coupon">Apply</button>
+                            </div>
+                        </div>
+                        
+                        
+                        <h2>Payment Method</h2>
+                        <label class="labal-la"> 
+                            <input type="radio" name="payment" value="cod" id="cod"> Cash on Delivery
+                        </label>
+                        <br>
+                        <label class="labal-la">
+                            <input type="radio" name="payment" value="card" id="card-payment"> Credit/Debit Card
+                        </label>
+                        
+                        <!-- Card Type Selection (Initially Hidden) -->
+                        <div id="card-type-section" style="display: none;">
+                            <label class="labal-la" for="card-type">Select Card Type:</label>
+                            <select id="card-type">
+                                <option value="">--Select--</option>
+                                <option value="visa">Visa</option>
+                                <option value="mastercard">MasterCard</option>
+                                <option value="amex">American Express</option>
+                            </select>
+                            
+                            <!-- Card Type Images -->
+                            <div id="card-images">
+                                <img id="visa-img" src="images/Visa.jpg" alt="Visa" style="display: none; width: 50px;">
+                                <img id="mastercard-img" src="images/MasterCard.webp" alt="MasterCard" style="display: none; width: 50px;">
+                                <img id="amex-img" src="images/American-Express.webp" alt="American Express" style="display: none; width: 50px;">
+                            </div>
+                        </div>
+                        
+                        <!-- Card Details (Initially Hidden) -->
+                        <div id="card-details" style="display: none;">
+                            <label class="labal-la" for="card-name">Full Name:</label>
+                            <input class="input-in" type="text" id="card-name">
+                            
+
+                            <label class="labal-la" for="card">Card Number:</label>
+                            <input class="input-in" type="text" id="card" required>
+                        
+                            <label class="labal-la" for="expiry">Expiry Date:</label>
+                            <input class="input-in" type="text" id="expiry" required>
+                        
+                            <label class="labal-la" for="cvv">CVV:</label>
+                            <input class="input-in" type="text" id="cvv" required>
+                        </div>
+                        
+    
+                        
+                        
+                        <button id="submit-btn" type="submit">Pay</button>
+                    </form>
+                </div>
+            </section>
+
+            
+            <div id="thank-you-section" style="display: none; text-align: center;">
+                <div id="thank-you-message"></div>
+                <button id="home-button" class="btn-home">🏠 Back to Home</button> <!-- Back to Home Button -->
+            </div>
+            
+            
+
+
+            <script src="checkout.js"></script>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Latest Releases</h3>
+                    <ul>
+                        <li>Action Games</li>
+                        <li>RPG Titles</li>
+                        <li>Sports Games</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Popular Platforms</h3>
+                    <ol>
+                        <li>PC Gaming</li>
+                        <li>PlayStation</li>
+                        <li>Xbox</li>
+                    </ol>
+                </div>
+                <div class="footer-column">
+                    <h3>Upcoming Games</h3>
+                    <ol>
+                        <li>Hell Is Us</li>
+                        <li>Ghost of Yōtei</li>
+                        <li>Civilization VII</li>
+                        <li>Football Manager</li>
+                    </ol>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div>
+                        <p>support@genxgaming.com</p>
+                        <p>+94-722-071-234 (Sales)</p>
+                        <p>+94-777-841-593 (Technical)</p>
+                        <p>+94-777-349-567(Management)</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com"><img src="images/bxl-facebook.svg" alt="Facebook"></a>
+                        <a href="https://www.twitter.com"><img src="images/bxl-twitter.svg" alt="Twitter"></a>
+                        <a href="https://www.discord.com"><img src="images/bxl-discord-alt.svg" alt="Discord"></a>
+                        <a href="https://www.instagram.com"><img src="images/bxl-instagram.svg" alt="Instagram"></a>
+                        <a href="https://www.whatsapp.com"><img src="images/bxl-whatsapp.svg" alt="Whatsapp"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-payment">
+                <h3>Ways to Pay:</h3>
+                <div class="payment-methods">
+                    <img src="images/Paysafe.png" alt="Paysafe">
+                    <img src="images/MasterCard.webp" alt="MasterCard">
+                    <img src="images/Visa.jpg" alt="Visa">
+                    <img src="images/American-Express.webp" alt="American Express">
+                    <img src="images/AliPay.jpg" alt="AliPay">
+                    <img src="images/WeChat-Pay.png" alt="WeChat Pay">
+                    <img src="images/CB.png" alt="CB">
+                    <img src="images/Discover.jpg" alt="Discover">
+                    <img src="images/Google-Pay.png" alt="Google Pay">
+                    <img src="images/PagSeguro.png" alt="PagSeguro">
+                    <img src="images/PayPal.png" alt="PayPal">
+                    <img src="images/Apple-Pay.jpg" alt="Apple Pay">
+                    <img src="images/JCB.jpg" alt="JCB">
+                    <img src="images/Maestro.jpg" alt="Maestro">
+                    <img src="images/Klarna.webp" alt="Klarna">
+                    <img src="images/Visa-Debit.jpeg" alt="Visa Debit">
+                    <img src="images/UnionPay.png" alt="UnionPay">
+                    <img src="images/Yellow-Pay.png" alt="Yellow Pay">
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
+    

@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parts Selection</title>
+    <link rel="shortcut icon" href="images/GenX_Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="partsselection.css">
+</head>
+<body>
+
+    <header>
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/bxl-facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="images/bxl-twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://www.discord.com" target="_blank">
+                <img src="images/bxl-discord-alt.svg" alt="Discord">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/bxl-instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://www.whatsapp.com" target="_blank">
+                <img src="images/bxl-whatsapp.svg" alt="Whatsapp">
+            </a>
+        </div>
+        <div class="logo-container">
+            <img src="images/GenX_Logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="header-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for games...">
+                <button type="submit" class="search-btn">
+                    <img src="images/bx-search.svg" alt="Search" class="button-icon">
+                </button>
+                <div class="login-icon-container">
+                    <a href="login.html">
+                        <img src="images/login.svg" alt="Login" class="login-icon">
+                    </a>
+                </div>
+                <div class="header-icons">
+                    <a href="order.html" id="cart-icon">
+                        <img src="images/bx-cart.svg" alt="Cart" class="header-icon-img"> <span id="cart-count">0</span>
+                    </a>
+                    <a href="favorites.html" id="favorite-icon">
+                        <img src="images/bx-heart.svg" alt="Favorites" class="header-icon-img"> <span id="fav-count">0</span>
+                    </a>
+                </div>
+            </div>                                    
+            <nav class="navbar">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./upcominggames.html">Upcoming Games</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">C&G Peripherals</a>
+                        <div class="dropdown-content">
+                            <a href="./c&gperipherals.html">Console</a>
+                            <a href="./c&gperipherals.html">Peripherals</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="active dropbtn" href="javascript:void(0)">Parts Selection</a>
+                        <div class="dropdown-content">
+                            <a href="./partsselection.html">Processors</a>
+                            <a href="#graphic-section">Graphic Cards</a>
+                            <a href="#motherboard-section">Motherboards</a>
+                            <a href="#ram-section">RAMS</a>
+                            <a href="#storage-section">Storages</a>
+                        </div>
+                    </li>
+                    <li><a href="./games.html">Games</a></li>
+                    <li><a href="./q&f.html">Q&F</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-toggle" onclick="toggleMobileMenu(this)">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+  
+    </header>
+
+
+    <main>
+        <section id="parts">
+            <h2>Processors</h2>
+            <div class="store-items">
+
+                <!-- Processor 1 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="processor1-details.html">
+                            <img src="images/Intel-Core-i7.webp" alt="Intel Core i7">
+                          </a>
+                          <div class="hover-description">
+                            <p><strong>Description:</strong> 8-core, 16-thread performance CPU.</p>
+                            <p><strong>Release Date:</strong> Jan 2024</p>
+                            <p><strong>Categories:</strong> Processors</p>
+                            <p><strong>Tags:</strong> Intel, i7, Gaming</p>
+                            <p><strong>Price:</strong> LKR 17,000</p>
+                          </div>
+                    </div>
+                    <h3>Intel Core i7 14th gen</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Jan 2024</p>
+                        <p><strong>Categories:</strong> Processors</p>
+                        <p><strong>Tags:</strong> Intel, i7, Gaming</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 17,000</span>
+                        <span class="discount">(40% OFF)</span>
+                        <span class="original-price">LKR 28,000</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="quantity1">Quantity: </label>
+                        <input type="number" id="quantity1" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('Intel Core i7', 17000)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Intel Core i7', 17000, document.getElementById('quantity1').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('Intel Core i7', 17000)">♥</button>
+                    </div>
+                </div>
+              
+                <!-- Processor 2 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="processor2-details.html">
+                            <img src="images/ryzen.png" alt="AMD Ryzen 7 5800X">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> 8-core powerhouse with amazing efficiency.</p>
+                            <p><strong>Release Date:</strong> Mar 2023</p>
+                            <p><strong>Categories:</strong> Processors</p>
+                            <p><strong>Tags:</strong> AMD, Ryzen, 5800X</p>
+                            <p><strong>Price:</strong> LKR 25,200</p>
+                        </div>
+                    </div>
+                    <h3>AMD Ryzen 7 5800X</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Mar 2023</p>
+                        <p><strong>Categories:</strong> Processors</p>
+                        <p><strong>Tags:</strong> AMD, Ryzen</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 25,200</span>
+                        <span class="discount">(30% OFF)</span>
+                        <span class="original-price"> LKR 36,000</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="quantity2">Quantity: </label>
+                        <input type="number" id="quantity2" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('AMD Ryzen 7 5800X', 25200)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('AMD Ryzen 7 5800X', 25200, document.getElementById('quantity2').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('AMD Ryzen 7 5800X', 25200)">♥</button>
+                    </div>
+                </div>
+              
+                <!-- Processor 3 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="processor3-details.html">
+                            <img src="images/intel-core-i5.webp" alt="Intel Core i5 12600K">
+                        </a>
+                        <div class="hover-description">                        <p><strong>Description:</strong> Balanced power for gaming and work.</p>
+                            <p><strong>Release Date:</strong> Feb 2023</p>
+                            <p><strong>Categories:</strong> Processors</p>
+                            <p><strong>Tags:</strong> Intel, i5, Alder Lake</p>
+                            <p><strong>Price:</strong> LKR 25,125</p>
+                        </div>
+                    </div>
+                    <h3>Intel Core i5 12600K</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Feb 2023</p>
+                        <p><strong>Categories:</strong> Processors</p>
+                        <p><strong>Tags:</strong> Intel, i5</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 25,125</span>
+                        <span class="discount">(25% OFF)</span>
+                        <span class="original-price">LKR33,500</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="quantity3">Quantity: </label>
+                        <input type="number" id="quantity3" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('Intel Core i5 12600K', 25125)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Intel Core i5 12600K', 25125, document.getElementById('quantity3').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('Intel Core i5 12600K', 25125)">♥</button>
+                    </div>
+                </div>
+              
+                <!-- Processor 4 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="processor4-details.html">
+                            <img src="images/AMD-Ryzen-5-5600X.webp" alt="AMD Ryzen 5 5600X">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> 6-core CPU great for budget builds.</p>
+                            <p><strong>Release Date:</strong> Nov 2022</p>
+                            <p><strong>Categories:</strong> Processors</p>
+                            <p><strong>Tags:</strong> AMD, Ryzen, 5600X</p>
+                            <p><strong>Price:</strong> LKR 24,800</p>
+                        </div>
+                    </div>
+                    <h3>AMD Ryzen 5 5600X</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Nov 2022</p>
+                        <p><strong>Categories:</strong> Processors</p>
+                        <p><strong>Tags:</strong> AMD, Budget</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 24,800</span>
+                        <span class="discount">(20% OFF)</span>
+                        <span class="original-price">LKR31,000</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="quantity4">Quantity: </label>
+                        <input type="number" id="quantity4" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('AMD Ryzen 5 5600X', 24800)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('AMD Ryzen 5 5600X', 24800, document.getElementById('quantity4').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('AMD Ryzen 5 5600X', 24800)">♥</button>
+                    </div>
+                </div>
+              
+                <!-- Processor 5 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="processor5-details.html">
+                            <img src="images/Intel-Core-i9-13900K-Processor.webp" alt="Intel Core i9 13900K">
+                          </a>
+                          <div class="hover-description">
+                            <p><strong>Description:</strong> High-end CPU for content creators and gamers.</p>
+                            <p><strong>Release Date:</strong> Dec 2023</p>
+                            <p><strong>Categories:</strong> Processors</p>
+                            <p><strong>Tags:</strong> Intel, i9, Flagship</p>
+                            <p><strong>Price:</strong> LKR 23,800</p>
+                          </div>
+                    </div>
+                    <h3>Intel Core i9 13900K</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Dec 2023</p>
+                        <p><strong>Categories:</strong> Processors</p>
+                        <p><strong>Tags:</strong> Intel, High-End</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 23,800</span>
+                        <span class="discount">(15% OFF)</span>
+                        <span class="original-price">LKR28,000</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="quantity5">Quantity: </label>
+                        <input type="number" id="quantity5" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('Intel Core i9 13900K', 23800)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Intel Core i9 13900K', 23800, document.getElementById('quantity5').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('Intel Core i9 13900K', 23800)">♥</button>
+                    </div>
+                </div>
+              
+                <!-- Processor 6 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="processor6-details.html">
+                            <img src="images/intel-gold.png" alt="Intel Pentium Gold G6400">
+                          </a>
+                          <div class="hover-description">
+                            <p><strong>Description:</strong> Entry-level dual-core processor.</p>
+                            <p><strong>Release Date:</strong> Jun 2022</p>
+                            <p><strong>Categories:</strong> Processors</p>
+                            <p><strong>Tags:</strong> Intel, Pentium, Budget</p>
+                            <p><strong>Price:</strong> LKR 36,000</p>
+                          </div>
+                    </div>
+                    <h3>Intel Pentium Gold G6400</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Jun 2022</p>
+                        <p><strong>Categories:</strong> Processors</p>
+                        <p><strong>Tags:</strong> Intel, Budget</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 36,000</span>
+                        <span class="discount">(10% OFF)</span>
+                        <span class="original-price">LKR40,000</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="quantity6">Quantity: </label>
+                        <input type="number" id="quantity6" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('Intel Pentium Gold G6400', 36000)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Intel Pentium Gold G6400', 36000, document.getElementById('quantity6').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('Intel Pentium Gold G6400', 36000)">♥</button>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section id="graphic-section">
+            <h2>Graphic Cards</h2>
+            <div class="store-items">
+                
+                <!-- Graphic Card 1 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="gpu1-details.html">
+                            <img src="images/rtx-3080.png" alt="NVIDIA RTX 3080">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> High-end 4K gaming GPU with ray tracing.</p>
+                            <p><strong>Release Date:</strong> Sept 2023</p>
+                            <p><strong>Categories:</strong> Graphic Cards</p>
+                            <p><strong>Tags:</strong> NVIDIA, RTX, 3080</p>
+                            <p><strong>Price:</strong> LKR 86,100</p>
+                        </div>
+                    </div>
+                    <h3>NVIDIA RTX 3080</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Sept 2023</p>
+                        <p><strong>Categories:</strong> Graphic Cards</p>
+                        <p><strong>Tags:</strong> NVIDIA, RTX</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 86,100</span>
+                        <span class="discount">(30% OFF)</span>
+                        <span class="original-price">LKR123,000</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="gpuQuantity1">Quantity: </label>
+                        <input type="number" id="gpuQuantity1" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('NVIDIA RTX 3080', 86100)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('NVIDIA RTX 3080', 86100, document.getElementById('gpuQuantity1').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('NVIDIA RTX 3080', 86100)">♥</button>
+                    </div>
+                </div>
+              
+                <!-- Graphic Card 2 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="gpu2-details.html">
+                            <img src="images/rx-6800.png" alt="AMD Radeon RX 6800 XT">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> Competitive performance with 16GB memory.</p>
+                            <p><strong>Release Date:</strong> Aug 2023</p>
+                            <p><strong>Categories:</strong> Graphic Cards</p>
+                            <p><strong>Tags:</strong> AMD, RX, 6800XT</p>
+                            <p><strong>Price:</strong> LKR 141,750</p>
+                        </div>
+                    </div>
+                    <h3>AMD Radeon RX 6800 XT</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Aug 2023</p>
+                        <p><strong>Categories:</strong> Graphic Cards</p>
+                        <p><strong>Tags:</strong> AMD, RX</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 141,750</span>
+                        <span class="discount">(25% OFF)</span>
+                        <span class="original-price">LKR189,000</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="gpuQuantity2">Quantity: </label>
+                        <input type="number" id="gpuQuantity2" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('AMD Radeon RX 6800 XT', 141750)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('AMD Radeon RX 6800 XT', 141750, document.getElementById('gpuQuantity2').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('AMD Radeon RX 6800 XT', 141750)">♥</button>
+                    </div>
+                </div>
+              
+                <!-- Graphic Card 3 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="gpu3-details.html">
+                            <img src="images/rtx-3070.png" alt="NVIDIA RTX 3070 Ti">
+                          </a>
+                          <div class="hover-description">
+                            <p><strong>Description:</strong> 1440p performance king with DLSS.</p>
+                            <p><strong>Release Date:</strong> Jul 2022</p>
+                            <p><strong>Categories:</strong> Graphic Cards</p>
+                            <p><strong>Tags:</strong> NVIDIA, RTX, 3070Ti</p>
+                            <p><strong>Price:</strong> LKR 91,200</p>
+                          </div>
+                    </div>
+                    <h3>NVIDIA RTX 3070 Ti</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Jul 2022</p>
+                        <p><strong>Categories:</strong> Graphic Cards</p>
+                        <p><strong>Tags:</strong> NVIDIA, 1440p</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 91,200</span>
+                        <span class="discount">(20% OFF)</span>
+                        <span class="original-price">LKR114,000</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="gpuQuantity3">Quantity: </label>
+                        <input type="number" id="gpuQuantity3" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('NVIDIA RTX 3070 Ti', 91200)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('NVIDIA RTX 3070 Ti', 91200, document.getElementById('gpuQuantity3').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('NVIDIA RTX 3070 Ti', 91200)">♥</button>
+                    </div>
+                </div>
+              
+                <!-- Graphic Card 4 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="gpu4-details.html">
+                            <img src="images/rx-6700.png" alt="AMD Radeon RX 6700 XT">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> 12GB VRAM and great value for 1440p.</p>
+                            <p><strong>Release Date:</strong> Jun 2022</p>
+                            <p><strong>Categories:</strong> Graphic Cards</p>
+                            <p><strong>Tags:</strong> AMD, RX, 6700XT</p>
+                            <p><strong>Price:</strong> LKR 133,770</p>
+                        </div>
+                    </div>
+                    <h3>AMD Radeon RX 6700 XT</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Jun 2022</p>
+                        <p><strong>Categories:</strong> Graphic Cards</p>
+                        <p><strong>Tags:</strong> AMD, 12GB</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 133,770</span>
+                        <span class="discount">(22% OFF)</span>
+                        <span class="original-price">LKR171,500</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="gpuQuantity4">Quantity: </label>
+                        <input type="number" id="gpuQuantity4" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('AMD Radeon RX 6700 XT', 133770)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('AMD Radeon RX 6700 XT', 133770, document.getElementById('gpuQuantity4').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('AMD Radeon RX 6700 XT', 133770)">♥</button>
+                    </div>
+                </div>
+              
+                <!-- Graphic Card 5 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="gpu5-details.html">
+                            <img src="images/gtx-1660.png" alt="NVIDIA GTX 1660 Super">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> Budget 1080p gaming GPU.</p>
+                            <p><strong>Release Date:</strong> Apr 2021</p>
+                            <p><strong>Categories:</strong> Graphic Cards</p>
+                            <p><strong>Tags:</strong> NVIDIA, GTX, 1660S</p>
+                            <p><strong>Price:</strong> LKR 90,900</p>
+                        </div>
+                    </div>
+                    <h3>NVIDIA GTX 1660 Super</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Apr 2021</p>
+                        <p><strong>Categories:</strong> Graphic Cards</p>
+                        <p><strong>Tags:</strong> NVIDIA, Budget</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 90,900</span>
+                        <span class="discount">(10% OFF)</span>
+                        <span class="original-price">LKR101,000</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="gpuQuantity5">Quantity: </label>
+                        <input type="number" id="gpuQuantity5" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('NVIDIA GTX 1660 Super', 90900)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('NVIDIA GTX 1660 Super', 90900, document.getElementById('gpuQuantity5').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('NVIDIA GTX 1660 Super', 90900)">♥</button>
+                    </div>
+                </div>
+              
+                <!-- Graphic Card 6 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="gpu6-details.html">
+                            <img src="images/arc.png" alt="Intel Arc A770">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> Intel’s debut GPU with ray tracing.</p>
+                            <p><strong>Release Date:</strong> Dec 2023</p>
+                            <p><strong>Categories:</strong> Graphic Cards</p>
+                            <p><strong>Tags:</strong> Intel, Arc, A770</p>
+                            <p><strong>Price:</strong> LKR 86,510</p>
+                        </div>
+                    </div>
+                    <h3>Intel Arc A770</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Dec 2023</p>
+                        <p><strong>Categories:</strong> Graphic Cards</p>
+                        <p><strong>Tags:</strong> Intel, Arc</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 86,510</span>
+                        <span class="discount">(18% OFF)</span>
+                        <span class="original-price">LKR105,500</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="gpuQuantity6">Quantity: </label>
+                        <input type="number" id="gpuQuantity6" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('Intel Arc A770', 86510)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Intel Arc A770', 86510, document.getElementById('gpuQuantity6').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('Intel Arc A770', 86510)">♥</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="motherboard-section">
+            <h2>Motherboards</h2>
+            <div class="store-items">
+                
+                <!-- Motherboard 1 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="mb1-details.html">
+                            <img src="images/z790.png" alt="ASUS ROG Strix Z790-E">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> High-end ATX motherboard with Wi-Fi 6E and PCIe 5.0.</p>
+                            <p><strong>Release Date:</strong> Jan 2024</p>
+                            <p><strong>Categories:</strong> Motherboards</p>
+                            <p><strong>Tags:</strong> ASUS, Intel, Z790</p>
+                            <p><strong>Price:</strong> LKR 101,150</p>
+                        </div>
+                    </div>
+                    <h3>ASUS ROG Strix Z790-E</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Jan 2024</p>
+                        <p><strong>Categories:</strong> Motherboards</p>
+                        <p><strong>Tags:</strong> Z790, Wi-Fi 6E</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 101,150</span>
+                        <span class="discount">(15% OFF)</span>
+                        <span class="original-price">LKR119,000</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="mbQuantity1">Quantity: </label>
+                        <input type="number" id="mbQuantity1" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('ASUS ROG Strix Z790-E', 101150)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('ASUS ROG Strix Z790-E', 101150, document.getElementById('mbQuantity1').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('ASUS ROG Strix Z790-E', 101150)">♥</button>
+                    </div>
+                </div>
+                <!-- Motherboard 2 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="mb2-details.html">
+                            <img src="images/msi-b650.png" alt="MSI MAG B650 TOMAHAWK">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> AM5 support with DDR5 compatibility.</p>
+                            <p><strong>Release Date:</strong> Dec 2023</p>
+                            <p><strong>Categories:</strong> Motherboards</p>
+                            <p><strong>Tags:</strong> MSI, AMD, B650</p>
+                            <p><strong>Price:</strong> LKR 129,150</p>
+                        </div>
+                    </div>
+                    <h3>MSI MAG B650 TOMAHAWK</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Dec 2023</p>
+                        <p><strong>Categories:</strong> Motherboards</p>
+                        <p><strong>Tags:</strong> AM5, DDR5</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 129,150</span>
+                        <span class="discount">(10% OFF)</span>
+                        <span class="original-price">LKR143,500</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="mbQuantity2">Quantity: </label>
+                        <input type="number" id="mbQuantity2" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('MSI MAG B650 TOMAHAWK', 129150)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('MSI MAG B650 TOMAHAWK', 129150, document.getElementById('mbQuantity2').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('MSI MAG B650 TOMAHAWK', 129150)">♥</button>
+                    </div>
+                </div>
+              
+                <!-- Motherboard 3 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="mb3-details.html">
+                            <img src="images/b550.png" alt="Gigabyte AORUS B550 Elite V2">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> AM4 motherboard with 2.5G LAN and PCIe 4.0 support.</p>
+                            <p><strong>Release Date:</strong> Nov 2022</p>
+                            <p><strong>Categories:</strong> Motherboards</p>
+                            <p><strong>Tags:</strong> Gigabyte, B550, Ryzen</p>
+                            <p><strong>Price:</strong> LKR 81,180</p>
+                        </div>
+                    </div>
+                    <h3>Gigabyte AORUS B550 Elite </h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Nov 2022</p>
+                        <p><strong>Categories:</strong> Motherboards</p>
+                        <p><strong>Tags:</strong> AM4, PCIe 4.0</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 81,180</span>
+                        <span class="discount">(18% OFF)</span>
+                        <span class="original-price">LKR99,000</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="mbQuantity3">Quantity: </label>
+                        <input type="number" id="mbQuantity3" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('Gigabyte AORUS B550 Elite V2', 81180)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Gigabyte AORUS B550 Elite V2', 81180, document.getElementById('mbQuantity3').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('Gigabyte AORUS B550 Elite V2', 81180)">♥</button>
+                    </div>
+                </div>
+              
+                <!-- Motherboard 4 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="mb4-details.html">
+                            <img src="images/asrock-b450m.webp" alt="ASRock B450M PRO4">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> Budget micro-ATX board for AM4 builds.</p>
+                            <p><strong>Release Date:</strong> Sept 2022</p>
+                            <p><strong>Categories:</strong> Motherboards</p>
+                            <p><strong>Tags:</strong> ASRock, B450</p>
+                            <p><strong>Price:</strong> LKR 84,920</p>
+                        </div>
+                    </div>
+                    <h3>ASRock B450M PRO4</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Sept 2022</p>
+                        <p><strong>Categories:</strong> Motherboards</p>
+                        <p><strong>Tags:</strong> Budget, AM4</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 84,920</span>
+                        <span class="discount">(12% OFF)</span>
+                        <span class="original-price">LKR 96,500</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="mbQuantity4">Quantity: </label>
+                        <input type="number" id="mbQuantity4" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('ASRock B450M PRO4', 84920)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('ASRock B450M PRO4', 84920, document.getElementById('mbQuantity4').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('ASRock B450M PRO4', 84920)">♥</button>
+                    </div>
+                </div>
+              
+                <!-- Motherboard 5 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="mb5-details.html">
+                            <img src="images/b660m.png" alt="MSI B660M Mortar DDR4">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> DDR4 Intel 12th Gen motherboard with USB-C.</p>
+                            <p><strong>Release Date:</strong> Oct 2023</p>
+                            <p><strong>Categories:</strong> Motherboards</p>
+                            <p><strong>Tags:</strong> MSI, B660, Intel</p>
+                            <p><strong>Price:</strong> LKR 134,725</p>
+                        </div>
+                    </div>
+                    <h3>MSI B660M Mortar DDR4</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Oct 2023</p>
+                        <p><strong>Categories:</strong> Motherboards</p>
+                        <p><strong>Tags:</strong> Intel, DDR4</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 134,725</span>
+                        <span class="discount">(15% OFF)</span>
+                        <span class="original-price">LKR 158,500</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="mbQuantity5">Quantity: </label>
+                        <input type="number" id="mbQuantity5" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('MSI B660M Mortar DDR4', 134725)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('MSI B660M Mortar DDR4', 134725, document.getElementById('mbQuantity5').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('MSI B660M Mortar DDR4', 134725)">♥</button>
+                    </div>
+                </div>
+              
+                <!-- Motherboard 6 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="mb6-details.html">
+                            <img src="images/GAMING-X670E.webp" alt="ASUS TUF Gaming X670E-PLUS">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> Designed for AMD Ryzen 7000 series with robust power delivery.</p>
+                            <p><strong>Release Date:</strong> Mar 2024</p>
+                            <p><strong>Categories:</strong> Motherboards</p>
+                            <p><strong>Tags:</strong> ASUS, TUF, X670E</p>
+                            <p><strong>Price:</strong> LKR 139,440</p>
+                        </div>
+                    </div>
+                    <h3>ASUS TUF Gaming X670E-PLUS</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Mar 2024</p>
+                        <p><strong>Categories:</strong> Motherboards</p>
+                        <p><strong>Tags:</strong> X670E, Ryzen 7000</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 139,440</span>
+                        <span class="discount">(17% OFF)</span>
+                        <span class="original-price">LKR 168,000</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="mbQuantity6">Quantity: </label>
+                        <input type="number" id="mbQuantity6" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('ASUS TUF Gaming X670E-PLUS', 139440)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('ASUS TUF Gaming X670E-PLUS', 139440, document.getElementById('mbQuantity6').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('ASUS TUF Gaming X670E-PLUS', 139440)">♥</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ram-section">
+            <h2>Memory (RAM)</h2>
+            <div class="store-items">
+                
+                <!-- RAM 1 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="ram1-details.html">
+                            <img src="images/VENGEANCE-LPX-16GB.png" alt="Corsair Vengeance LPX 16GB">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> 16GB (2x8GB) DDR4 3200MHz desktop memory kit.</p>
+                            <p><strong>Release Date:</strong> Jan 2023</p>
+                            <p><strong>Categories:</strong> Memory</p>
+                            <p><strong>Tags:</strong> Corsair, DDR4</p>
+                            <p><strong>Price:</strong> LKR 12,000</p>
+                        </div>
+                    </div>
+                    <h3>Corsair Vengeance LPX 16GB</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Jan 2023</p>
+                        <p><strong>Categories:</strong> Memory</p>
+                        <p><strong>Tags:</strong> DDR4, 3200MHz</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 12,000</span>
+                        <span class="discount">(20% OFF)</span>
+                        <span class="original-price">LKR 15,000</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="ramQuantity1">Quantity: </label>
+                        <input type="number" id="ramQuantity1" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('Corsair Vengeance LPX 16GB', 12000)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Corsair Vengeance LPX 16GB', 12000, document.getElementById('ramQuantity1').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('Corsair Vengeance LPX 16GB', 12000)">♥</button>
+                    </div>
+                </div>
+                
+                <!-- RAM 2 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="ram2-details.html">
+                            <img src="images/32GB-G.SKILL-Trident-Z5-RGB.webp" alt="G.SKILL Trident Z RGB 32GB">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> 32GB (2x16GB) DDR4 3600MHz RGB RAM kit for high-performance PCs.</p>
+                            <p><strong>Release Date:</strong> Feb 2023</p>
+                            <p><strong>Categories:</strong> Memory</p>
+                            <p><strong>Tags:</strong> G.SKILL, RGB, Gaming</p>
+                            <p><strong>Price:</strong> LKR 26,350</p>
+                        </div>
+                    </div>
+                    <h3>G.SKILL Trident Z RGB 32GB</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Feb 2023</p>
+                        <p><strong>Categories:</strong> Memory</p>
+                        <p><strong>Tags:</strong> DDR4, RGB, 3600MHz</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 26,350</span>
+                        <span class="discount">(15% OFF)</span>
+                        <span class="original-price">LKR 31,000</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="ramQuantity2">Quantity: </label>
+                        <input type="number" id="ramQuantity2" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('G.SKILL Trident Z RGB 32GB', 26350)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('G.SKILL Trident Z RGB 32GB', 26350, document.getElementById('ramQuantity2').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('G.SKILL Trident Z RGB 32GB', 26350)">♥</button>
+                    </div>
+                </div>
+                
+                <!-- RAM 3 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="ram3-details.html">
+                            <img src="images/kingston-fury.png" alt="Kingston FURY Beast 16GB">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> 16GB DDR5 5200MHz RAM for next-gen systems.</p>
+                            <p><strong>Release Date:</strong> Oct 2023</p>
+                            <p><strong>Categories:</strong> Memory</p>
+                            <p><strong>Tags:</strong> Kingston, DDR5</p>
+                            <p><strong>Price:</strong> LKR 15,480</p>
+                        </div>
+                    </div>
+                    <h3>Kingston FURY Beast 16GB</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Oct 2023</p>
+                        <p><strong>Categories:</strong> Memory</p>
+                        <p><strong>Tags:</strong> DDR5, 5200MHz</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 15,480</span>
+                        <span class="discount">(10% OFF)</span>
+                        <span class="original-price">LKR17,200</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="ramQuantity3">Quantity: </label>
+                        <input type="number" id="ramQuantity3" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('Kingston FURY Beast 16GB', 15480)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Kingston FURY Beast 16GB', 15480, document.getElementById('ramQuantity3').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('Kingston FURY Beast 16GB', 15480)">♥</button>
+                    </div>
+                </div>
+          
+                <!-- RAM 4 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="ram4-details.html">
+                            <img src="images/cruc.png" alt="Crucial Ballistix 16GB">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> 16GB DDR4 RAM with aluminum heat spreader for performance and cooling.</p>
+                            <p><strong>Release Date:</strong> Sept 2022</p>
+                            <p><strong>Categories:</strong> Memory</p>
+                            <p><strong>Tags:</strong> Crucial, DDR4</p>
+                            <p><strong>Price:</strong> LKR 15,840</p>
+                        </div>
+                    </div>
+                    <h3>Crucial Ballistix 16GB</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Sept 2022</p>
+                        <p><strong>Categories:</strong> Memory</p>
+                        <p><strong>Tags:</strong> DDR4, Performance</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 15,840</span>
+                        <span class="discount">(25% OFF)</span>
+                        <span class="original-price">LKR19,800</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="ramQuantity4">Quantity: </label>
+                        <input type="number" id="ramQuantity4" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('Crucial Ballistix 16GB', 15840)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Crucial Ballistix 16GB', 15840, document.getElementById('ramQuantity4').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('Crucial Ballistix 16GB', 15840)">♥</button>
+                    </div>
+                </div>
+          
+                <!-- RAM 5 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="ram5-details.html">
+                            <img src="images/t-force.png" alt="TeamGroup T-Force Delta RGB 32GB">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> DDR5 6000MHz 32GB RAM kit with full RGB lighting.</p>
+                            <p><strong>Release Date:</strong> Apr 2024</p>
+                            <p><strong>Categories:</strong> Memory</p>
+                            <p><strong>Tags:</strong> RGB, DDR5, Gaming</p>
+                            <p><strong>Price:</strong> LKR 26,000</p>
+                        </div>
+                    </div>
+                    <h3>TeamGroup T-Force Delta RGB 32GB</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Apr 2024</p>
+                        <p><strong>Categories:</strong> Memory</p>
+                        <p><strong>Tags:</strong> DDR5, RGB</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 26,000</span>
+                        <span class="discount">(20% OFF)</span>
+                        <span class="original-price">LKR32,500</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="ramQuantity5">Quantity: </label>
+                        <input type="number" id="ramQuantity5" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('TeamGroup T-Force Delta RGB 32GB', 26000)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('TeamGroup T-Force Delta RGB 32GB', 26000, document.getElementById('ramQuantity5').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('TeamGroup T-Force Delta RGB 32GB', 26000)">♥</button>
+                    </div>
+                </div>
+          
+                <!-- RAM 6 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="ram6-details.html">
+                            <img src="images/viper_steel.png" alt="Patriot Viper Steel 16GB">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> High-performance 16GB DDR4 4400MHz desktop RAM.</p>
+                            <p><strong>Release Date:</strong> Mar 2023</p>
+                            <p><strong>Categories:</strong> Memory</p>
+                            <p><strong>Tags:</strong> Patriot, DDR4, 4400MHz</p>
+                            <p><strong>Price:</strong> $LKR 12,636</p>
+                        </div>
+                    </div>
+                    <h3>Patriot Viper Steel 16GB</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Mar 2023</p>
+                        <p><strong>Categories:</strong> Memory</p>
+                        <p><strong>Tags:</strong> High-Speed, DDR4</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 12,636</span>
+                        <span class="discount">(22% OFF)</span>
+                        <span class="original-price">LKR16,200</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="ramQuantity6">Quantity: </label>
+                        <input type="number" id="ramQuantity6" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('Patriot Viper Steel 16GB', 12636)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Patriot Viper Steel 16GB', 12636, document.getElementById('ramQuantity6').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('Patriot Viper Steel 16GB', 12636)">♥</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+          
+        <section id="storage-section">
+            <h2>Storage Devices</h2>
+            <div class="store-items">
+                
+                <!-- Storage 1 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="storage1-details.html">
+                            <img src="images/evo-plus.png" alt="Samsung 970 EVO Plus 1TB">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> High-speed NVMe M.2 SSD with read speeds up to 3500MB/s.</p>
+                            <p><strong>Release Date:</strong> March 2023</p>
+                            <p><strong>Categories:</strong> Storage</p>
+                            <p><strong>Tags:</strong> SSD, NVMe, Samsung</p>
+                            <p><strong>Price:</strong> LKR 27,300</p>
+                        </div>
+                    </div>
+                    <h3>Samsung 970 EVO Plus 1TB</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> March 2023</p>
+                        <p><strong>Categories:</strong> Storage</p>
+                        <p><strong>Tags:</strong> NVMe, SSD</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 27,300</span>
+                        <span class="discount">(30% OFF)</span>
+                        <span class="original-price">LKR39,000</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="storageQuantity1">Quantity: </label>
+                        <input type="number" id="storageQuantity1" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('Samsung 970 EVO Plus 1TB', 27300)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Samsung 970 EVO Plus 1TB', 27300, document.getElementById('storageQuantity1').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('Samsung 970 EVO Plus 1TB', 27300)">♥</button>
+                    </div>
+                </div>
+              
+                <!-- Storage 2 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="storage2-details.html">
+                            <img src="images/wd-2tb-blue.png" alt="WD Blue 2TB HDD">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> Reliable 3.5” hard drive for desktop PCs with 7200RPM.</p>
+                            <p><strong>Release Date:</strong> Feb 2022</p>
+                            <p><strong>Categories:</strong> Storage</p>
+                            <p><strong>Tags:</strong> HDD, 2TB</p>
+                            <p><strong>Price:</strong> LKR 41,600</p>
+                        </div>
+                    </div>
+                    <h3>WD Blue 2TB HDD</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Feb 2022</p>
+                        <p><strong>Categories:</strong> Storage</p>
+                        <p><strong>Tags:</strong> HDD, WD</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 41,600</span>
+                        <span class="discount">(20% OFF)</span>
+                        <span class="original-price">LKR52,000</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="storageQuantity2">Quantity: </label>
+                        <input type="number" id="storageQuantity2" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('WD Blue 2TB HDD', 41600)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('WD Blue 2TB HDD', 41600, document.getElementById('storageQuantity2').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('WD Blue 2TB HDD', 41600)">♥</button>
+                    </div>
+                </div>
+              
+                <!-- Storage 3 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="storage3-details.html">
+                            <img src="images/mx500.png" alt="Crucial MX500 500GB SSD">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> SATA 2.5” SSD for faster boot times and data access.</p>
+                            <p><strong>Release Date:</strong> Aug 2023</p>
+                            <p><strong>Categories:</strong> Storage</p>
+                            <p><strong>Tags:</strong> Crucial, SSD</p>
+                            <p><strong>Price:</strong> LKR 15,555</p>
+                        </div>
+                    </div>
+                    <h3>Crucial MX500 500GB SSD</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Aug 2023</p>
+                        <p><strong>Categories:</strong> Storage</p>
+                        <p><strong>Tags:</strong> SSD, SATA</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 15,555</span>
+                        <span class="discount">(15% OFF)</span>
+                        <span class="original-price">LKR18,300</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="storageQuantity3">Quantity: </label>
+                        <input type="number" id="storageQuantity3" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('Crucial MX500 500GB SSD', 15555)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Crucial MX500 500GB SSD', 15555, document.getElementById('storageQuantity3').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('Crucial MX500 500GB SSD', 15555)">♥</button>
+                    </div>
+                </div>
+              
+                <!-- Storage 4 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="storage4-details.html">
+                            <img src="images/seagate.webp" alt="Seagate Barracuda 4TB HDD">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> High-capacity 5400RPM 4TB desktop hard drive.</p>
+                            <p><strong>Release Date:</strong> May 2022</p>
+                            <p><strong>Categories:</strong> Storage</p>
+                            <p><strong>Tags:</strong> Seagate, HDD</p>
+                            <p><strong>Price:</strong> LKR 72,160</p>
+                        </div>
+                    </div>
+                    <h3>Seagate Barracuda 4TB HDD</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> May 2022</p>
+                        <p><strong>Categories:</strong> Storage</p>
+                        <p><strong>Tags:</strong> HDD, High Capacity</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 72,160</span>
+                        <span class="discount">(18% OFF)</span>
+                        <span class="original-price">LKR88,000</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="storageQuantity4">Quantity: </label>
+                        <input type="number" id="storageQuantity4" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('Seagate Barracuda 4TB HDD', 72160)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Seagate Barracuda 4TB HDD', 72160, document.getElementById('storageQuantity4').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('Seagate Barracuda 4TB HDD', 72160)">♥</button>
+                    </div>
+                </div>
+              
+                <!-- Storage 5 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="storage5-details.html">
+                            <img src="images/1TB-Kingston.png" alt="Kingston A2000 1TB NVMe SSD">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> Fast and budget-friendly NVMe SSD with 2200MB/s read speed.</p>
+                            <p><strong>Release Date:</strong> Jan 2023</p>
+                            <p><strong>Categories:</strong> Storage</p>
+                            <p><strong>Tags:</strong> Kingston, NVMe</p>
+                            <p><strong>Price:</strong> LKR 24,112</p>
+                        </div>
+                    </div>
+                    <h3>Kingston A2000 1TB NVMe SSD</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Jan 2023</p>
+                        <p><strong>Categories:</strong> Storage</p>
+                        <p><strong>Tags:</strong> NVMe, SSD</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 24,112</span>
+                        <span class="discount">(12% OFF)</span>
+                        <span class="original-price">LKR27,400</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="storageQuantity5">Quantity: </label>
+                        <input type="number" id="storageQuantity5" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('Kingston A2000 1TB NVMe SSD', 24112)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Kingston A2000 1TB NVMe SSD', 24112, document.getElementById('storageQuantity5').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('Kingston A2000 1TB NVMe SSD', 24112)">♥</button>
+                    </div>
+                </div>
+              
+                <!-- Storage 6 -->
+                <div class="item-card">
+                    <div class="image-container">
+                        <a href="storage6-details.html">
+                            <img src="images/adata-xpg.png" alt="ADATA XPG GAMMIX S70 Blade 2TB">
+                        </a>
+                        <div class="hover-description">
+                            <p><strong>Description:</strong> High-speed PCIe Gen4 NVMe SSD with heatsink and 7400MB/s read speed.</p>
+                            <p><strong>Release Date:</strong> Dec 2023</p>
+                            <p><strong>Categories:</strong> Storage</p>
+                            <p><strong>Tags:</strong> Gen4, NVMe, ADATA</p>
+                            <p><strong>Price:</strong> LKR 26,250</p>
+                        </div>
+                    </div>
+                    <h3>ADATA XPG GAMMIX S70 Blade 2TB</h3>
+                    <div class="details">
+                        <p><strong>Release Date:</strong> Dec 2023</p>
+                        <p><strong>Categories:</strong> Storage</p>
+                        <p><strong>Tags:</strong> PCIe Gen4, SSD</p>
+                    </div>
+                    <div class="pricing">
+                        <span class="final-price">LKR 26,250</span>
+                        <span class="discount">(25% OFF)</span>
+                        <span class="original-price">LKR35,000</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="storageQuantity6">Quantity: </label>
+                        <input type="number" id="storageQuantity6" value="1" min="1" max="10">
+                    </div>
+                    <div class="actions">
+                        <button class="buy-now" onclick="buyNow('ADATA XPG GAMMIX S70 Blade 2TB', 26250)">Buy Now</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('ADATA XPG GAMMIX S70 Blade 2TB', 26250, document.getElementById('storageQuantity6').value)">Add to Cart</button>
+                        <button class="wishlist-btn" onclick="saveToFavorites('ADATA XPG GAMMIX S70 Blade 2TB', 26250)">♥</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+          
+
+    <script src="script.js"></script>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Latest Releases</h3>
+                <ul>
+                    <li>Action Games</li>
+                    <li>RPG Titles</li>
+                    <li>Sports Games</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Popular Platforms</h3>
+                <ol>
+                    <li>PC Gaming</li>
+                    <li>PlayStation</li>
+                    <li>Xbox</li>
+                </ol>
+            </div>
+            <div class="footer-column">
+                <h3>Upcoming Games</h3>
+                <ol>
+                    <li>Hell Is Us</li>
+                    <li>Ghost of Yōtei</li>
+                    <li>Civilization VII</li>
+                    <li>Football Manager</li>
+                </ol>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <div>
+                    <p>support@genxgaming.com</p>
+                    <p>+94-722-071-234 (Sales)</p>
+                    <p>+94-777-841-593 (Technical)</p>
+                    <p>+94-777-349-567(Management)</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><img src="images/bxl-facebook.svg" alt="Facebook"></a>
+                    <a href="https://www.twitter.com"><img src="images/bxl-twitter.svg" alt="Twitter"></a>
+                    <a href="https://www.discord.com"><img src="images/bxl-discord-alt.svg" alt="Discord"></a>
+                    <a href="https://www.instagram.com"><img src="images/bxl-instagram.svg" alt="Instagram"></a>
+                    <a href="https://www.whatsapp.com"><img src="images/bxl-whatsapp.svg" alt="Whatsapp"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-payment">
+            <h3>Ways to Pay:</h3>
+            <div class="payment-methods">
+                <img src="images/Paysafe.png" alt="Paysafe">
+                <img src="images/MasterCard.webp" alt="MasterCard">
+                <img src="images/Visa.jpg" alt="Visa">
+                <img src="images/American-Express.webp" alt="American Express">
+                <img src="images/AliPay.jpg" alt="AliPay">
+                <img src="images/WeChat-Pay.png" alt="WeChat Pay">
+                <img src="images/CB.png" alt="CB">
+                <img src="images/Discover.jpg" alt="Discover">
+                <img src="images/Google-Pay.png" alt="Google Pay">
+                <img src="images/PagSeguro.png" alt="PagSeguro">
+                <img src="images/PayPal.png" alt="PayPal">
+                <img src="images/Apple-Pay.jpg" alt="Apple Pay">
+                <img src="images/JCB.jpg" alt="JCB">
+                <img src="images/Maestro.jpg" alt="Maestro">
+                <img src="images/Klarna.webp" alt="Klarna">
+                <img src="images/Visa-Debit.jpeg" alt="Visa Debit">
+                <img src="images/UnionPay.png" alt="UnionPay">
+                <img src="images/Yellow-Pay.png" alt="Yellow Pay">
+            </div>
+        </div>
+    </footer>
+    
+    </body>
+    </html>
+    
+</body>
+</html>

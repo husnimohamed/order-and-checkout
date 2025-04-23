@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Orders</title>
+    <link rel="shortcut icon" href="images/GenX_Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/bxl-facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="images/bxl-twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://www.discord.com" target="_blank">
+                <img src="images/bxl-discord-alt.svg" alt="Discord">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/bxl-instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://www.whatsapp.com" target="_blank">
+                <img src="images/bxl-whatsapp.svg" alt="Whatsapp">
+            </a>
+        </div>
+        <div class="logo-container">
+            <img src="images/GenX_Logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="header-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for games...">
+                <button type="submit" class="search-btn">
+                    <img src="images/bx-search.svg" alt="Search" class="button-icon">
+                </button>
+                <div class="login-icon-container">
+                    <a href="login.html">
+                        <img src="images/login.svg" alt="Login" class="login-icon">
+                    </a>
+                </div>
+                <div class="header-icons">
+                    <a href="order.html" id="cart-icon">
+                        <img src="images/bx-cart.svg" alt="Cart" class="header-icon-img"> <span id="cart-count">0</span>
+                    </a>
+                    <a href="favorites.html" id="favorite-icon">
+                        <img src="images/bx-heart.svg" alt="Favorites" class="header-icon-img"> <span id="fav-count">0</span>
+                    </a>
+                </div>
+            </div>                                    
+            <nav class="navbar">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./upcominggames.html">Upcoming Games</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">C&G Peripherals</a>
+                        <div class="dropdown-content">
+                            <a href="./c&gperipherals.html">Console</a>
+                            <a href="./c&gperipherals.html">Peripherals</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Parts Selection</a>
+                        <div class="dropdown-content">
+                            <a href="./partsselection.html">Processors</a>
+                            <a href="./partsselection.html">Graphic Cards</a>
+                            <a href="./partsselection.html">Motherboards</a>
+                            <a href="./partsselection.html">RAMS</a>
+                            <a href="./partsselection.html">Storages</a>
+                        </div>
+                    </li>
+                    <li><a href="./games.html">Games</a></li>
+                    <li><a href="./q&f.html">Q&F</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-toggle" onclick="toggleMobileMenu(this)">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="favorites-container">
+                <h1>Your Favorite Order</h1>
+                <table id="fav-table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <label>
+                                  <input type="checkbox" id="select-all-favorites">
+                                  All
+                                </label>
+                            </th>                            
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Action</th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <button id="apply-favorites">Apply Favorite Order</button>
+            </div>
+        </section>
+        
+        <script src="favorites.js"></script>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Latest Releases</h3>
+                <ul>
+                    <li>Action Games</li>
+                    <li>RPG Titles</li>
+                    <li>Sports Games</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Popular Platforms</h3>
+                <ol>
+                    <li>PC Gaming</li>
+                    <li>PlayStation</li>
+                    <li>Xbox</li>
+                </ol>
+            </div>
+            <div class="footer-column">
+                <h3>Upcoming Games</h3>
+                <ol>
+                    <li>Hell Is Us</li>
+                    <li>Ghost of Yōtei</li>
+                    <li>Civilization VII</li>
+                    <li>Football Manager</li>
+                </ol>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <div>
+                    <p>support@genxgaming.com</p>
+                    <p>+94-722-071-234 (Sales)</p>
+                    <p>+94-777-841-593 (Technical)</p>
+                    <p>+94-777-349-567(Management)</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><img src="images/bxl-facebook.svg" alt="Facebook"></a>
+                    <a href="https://www.twitter.com"><img src="images/bxl-twitter.svg" alt="Twitter"></a>
+                    <a href="https://www.discord.com"><img src="images/bxl-discord-alt.svg" alt="Discord"></a>
+                    <a href="https://www.instagram.com"><img src="images/bxl-instagram.svg" alt="Instagram"></a>
+                    <a href="https://www.whatsapp.com"><img src="images/bxl-whatsapp.svg" alt="Whatsapp"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-payment">
+            <h3>Ways to Pay:</h3>
+            <div class="payment-methods">
+                <img src="images/Paysafe.png" alt="Paysafe">
+                <img src="images/MasterCard.webp" alt="MasterCard">
+                <img src="images/Visa.jpg" alt="Visa">
+                <img src="images/American-Express.webp" alt="American Express">
+                <img src="images/AliPay.jpg" alt="AliPay">
+                <img src="images/WeChat-Pay.png" alt="WeChat Pay">
+                <img src="images/CB.png" alt="CB">
+                <img src="images/Discover.jpg" alt="Discover">
+                <img src="images/Google-Pay.png" alt="Google Pay">
+                <img src="images/PagSeguro.png" alt="PagSeguro">
+                <img src="images/PayPal.png" alt="PayPal">
+                <img src="images/Apple-Pay.jpg" alt="Apple Pay">
+                <img src="images/JCB.jpg" alt="JCB">
+                <img src="images/Maestro.jpg" alt="Maestro">
+                <img src="images/Klarna.webp" alt="Klarna">
+                <img src="images/Visa-Debit.jpeg" alt="Visa Debit">
+                <img src="images/UnionPay.png" alt="UnionPay">
+                <img src="images/Yellow-Pay.png" alt="Yellow Pay">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
